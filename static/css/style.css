@@ -1,245 +1,356 @@
 :root{--red:#e23744;--ink:#202124;--muted:#6b6b6b;--bg:#f8f8f8;--line:#e7e7e7;--green:#2d8051;--shadow:0 10px 35px #0000000d}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px "DM Sans",sans-serif}a{text-decoration:none;color:inherit}button,input,textarea,select{font:inherit}.top{height:76px;max-width:1180px;margin:auto;display:flex;align-items:center;gap:30px}.brand{font-size:27px;font-weight:800}.brand b{display:inline-grid;place-items:center;width:32px;height:32px;background:var(--red);color:#fff;border-radius:8px}.brand span{color:var(--red)}header{height:76px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}.global-search{height:44px;display:flex;align-items:center;background:#f6f6f6;border-radius:9px;padding:0 14px;flex:1;max-width:620px}.global-search input{border:0;outline:0;background:transparent;flex:1;padding:0 9px}.top-actions{margin-left:auto;display:flex;align-items:center;gap:18px;font-weight:700}.cart{background:var(--red);color:#fff;padding:11px 14px;border-radius:8px}.cart i{font-style:normal;background:#fff;color:var(--red);padding:2px 6px;border-radius:50%;font-size:10px}.layout{min-height:calc(100vh - 76px)}.sidebar{position:fixed;top:76px;bottom:0;width:245px;background:#fff;border-right:1px solid var(--line);padding:24px 14px;display:flex;flex-direction:column;z-index:20}.side-user{display:flex;gap:10px;align-items:center;padding:10px;margin-bottom:15px}.avatar{width:40px;height:40px;border-radius:50%;background:#ffe7e9;color:var(--red);display:grid;place-items:center;font-weight:800}.avatar.large{width:58px;height:58px;font-size:20px}.side-user b{display:block;font-size:13px}.side-user small{display:block;color:var(--muted);font-size:10px;margin-top:3px}.sidebar nav{display:flex;flex-direction:column;gap:4px}.sidebar nav a{padding:13px 14px;border-radius:9px;color:#606368;font-weight:600;display:flex;gap:13px;align-items:center}.sidebar nav a:hover{background:#fff0f1;color:var(--red)}.sidebar nav em{margin-left:auto;font-style:normal;font-size:10px;background:#f0f0f0;padding:3px 7px;border-radius:20px}.side-bottom{margin-top:auto;border-top:1px solid var(--line);padding:18px 14px}.main{margin-left:245px;min-height:calc(100vh - 76px);padding-bottom:50px}.hero{max-width:1180px;height:410px;margin:25px auto 0;border-radius:18px;background:#f8e5e2;position:relative;overflow:hidden;padding:65px 53% 40px 50px}.hero-copy{position:relative;z-index:2}.hero h1{font:700 54px/1.02 "Playfair Display",serif;margin:14px 0;letter-spacing:-2px}.hero h1 em{color:var(--red);font-style:normal}.hero p{color:#656565;line-height:1.7;max-width:440px}.hero>img{position:absolute;right:0;top:0;width:51%;height:100%;object-fit:cover;clip-path:ellipse(74% 95% at 73% 50%)}.rating-badge{position:absolute;left:43%;bottom:30px;background:#fff;padding:11px 15px;border-radius:9px;box-shadow:var(--shadow);display:flex;flex-direction:column}.rating-badge small{font-size:9px;color:var(--muted)}label{font-size:10px;letter-spacing:1.5px;color:var(--red);font-weight:800}.primary{border:0;background:var(--red);color:#fff;border-radius:8px;padding:13px 17px;font-weight:800;display:inline-flex;justify-content:center;cursor:pointer}.full{width:100%}.section{max-width:1180px;margin:auto;padding:45px 0}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px}.section-head h2{font:700 29px "Playfair Display",serif;margin:7px 0}.section-head>a{font-size:11px;font-weight:800}.offers{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.offer{min-height:135px;padding:22px;border-radius:13px;background:linear-gradient(120deg,#f9d9d4,#f4eeee);display:flex;justify-content:space-between;align-items:end}.offer h3{font:700 21px "Playfair Display",serif;margin:8px 0}.offer small{font-size:9px;color:#ad4a42}.offer p{font-size:10px;color:#686868}.offer>a{background:#fff;padding:9px 12px;border-radius:7px;font-size:10px;font-weight:800}.restaurants{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.restaurant-card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.2s}.restaurant-card:hover,.food-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.rimg{height:205px;position:relative}.rimg img{width:100%;height:100%;object-fit:cover}.rimg span{position:absolute;right:9px;bottom:9px;background:#fff;padding:5px 8px;border-radius:5px;font-size:10px;font-weight:800}.restaurant-card>div:last-child{padding:14px}.restaurant-card h3{margin:0 0 5px;font-size:18px}.restaurant-card p{font-size:11px;color:var(--muted);margin:0 0 8px}.restaurant-card small{font-size:9px;color:#777}.food-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.food-card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.2s}.food-img{height:170px;position:relative}.food-img img{width:100%;height:100%;object-fit:cover}.heart{position:absolute;right:9px;top:9px;width:34px;height:34px;border:0;border-radius:50%;background:#fff;font-size:20px;color:#777;cursor:pointer}.heart.liked{color:var(--red)}.food-body{padding:13px}.food-body>small{font-size:9px;color:#888}.food-line{display:flex;justify-content:space-between;gap:7px}.food-line h3{font-size:14px;margin:6px 0}.food-line b{font-size:13px}.food-body p{font-size:10px;color:#777;line-height:1.5;min-height:30px}.add-btn{width:100%;padding:9px;border:1px solid #ddd;border-radius:7px;background:#fff;font-weight:800;font-size:11px;display:flex;justify-content:space-between;cursor:pointer}.add-btn:hover{background:var(--red);color:#fff;border-color:var(--red)}.page-head{max-width:1180px;margin:auto;padding:45px 0 15px}.page-head h1{font:700 45px "Playfair Display",serif;margin:12px 0 7px}.page-head p{color:var(--muted)}.search-wide{display:flex;max-width:600px;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:20px}.search-wide input{flex:1;border:0;padding:13px;outline:0}.search-wide button{border:0;background:var(--ink);color:#fff;padding:0 17px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.chips a{background:#fff;border:1px solid var(--line);padding:8px 12px;border-radius:20px;font-size:10px;font-weight:700}.restaurant-cover{height:360px;position:relative;color:#fff}.restaurant-cover>img{width:100%;height:100%;object-fit:cover;filter:brightness(.5)}.restaurant-cover>div{position:absolute;left:max(calc((100% - 1180px)/2),20px);bottom:40px}.restaurant-cover h1{font:700 52px "Playfair Display",serif;margin:9px 0}.restaurant-cover p{max-width:650px;color:#eee}.restaurant-meta{max-width:1180px;margin:-25px auto 30px;background:#fff;position:relative;padding:16px 19px;border-radius:9px;box-shadow:var(--shadow);display:flex;gap:30px;font-size:10px}.open{color:var(--green)}.closed{color:var(--red)}.cart-layout,.checkout{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 330px;gap:28px}.cart-rest{display:flex;gap:10px;align-items:center;background:#fff;padding:14px;border-radius:9px;border:1px solid var(--line);margin-bottom:10px}.cart-rest span{color:#777;font-size:10px}.cart-rest form{margin-left:auto}.cart-rest button,.remove{border:0;background:none;text-decoration:underline;color:#777}.cart-row{display:grid;grid-template-columns:65px 1fr 115px 70px 25px;gap:14px;align-items:center;background:#fff;border-bottom:1px solid var(--line);padding:15px 0}.cart-row img{width:65px;height:65px;object-fit:cover;border-radius:8px}.cart-row small{display:block;color:#777;font-size:9px;margin-top:4px}.qtybox{display:flex;border:1px solid var(--line);border-radius:7px;overflow:hidden}.qtybox button{border:0;background:#fff;width:28px}.qtybox input{border:0;width:40px;text-align:center;outline:0}.summary,.form-card,.panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:21px}.summary{height:max-content;position:sticky;top:95px}.summary h2,.form-card h2,.panel h2{font:700 21px "Playfair Display",serif;margin:0 0 18px}.summary p{display:flex;justify-content:space-between;font-size:11px}.summary hr{border:0;border-top:1px solid var(--line)}.summary .total{font-size:17px}.outline-btn{border:1px solid var(--line);background:#fff;border-radius:7px;padding:10px 13px;font-size:11px;font-weight:700;cursor:pointer}.form-card label{display:block;font-size:11px;letter-spacing:0;color:#333;margin:12px 0}.form-card input,.form-card textarea,.form-card select,.panel input,.panel textarea,.panel select{width:100%;border:1px solid var(--line);padding:11px;border-radius:7px;margin-top:5px;outline:0}.option{display:flex!important;gap:8px;border:1px solid var(--line);padding:10px!important;border-radius:7px}.option input{width:auto!important;margin:2px 0 0!important}.option span{display:flex;flex-direction:column}.option small{color:#777;margin-top:3px}.coupon{display:flex;gap:7px}.coupon input{margin:0}.coupon button{border:0;background:var(--ink);color:#fff;border-radius:7px;padding:0 13px}.applied{color:var(--green);font-size:10px}.order-page{max-width:850px;margin:auto;text-align:center;padding:55px 0}.success-icon{width:50px;height:50px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;margin:auto auto 14px}.order-page h1{font:700 45px "Playfair Display",serif;margin:10px}.order-page>p{color:#777}.tracker{display:grid;grid-template-columns:repeat(4,1fr);margin:45px 0 25px}.tracker>div{color:#bbb;position:relative}.tracker>div:before{content:"";position:absolute;top:10px;left:-50%;width:100%;height:3px;background:#eee}.tracker>div:first-child:before{display:none}.tracker .done{color:var(--green)}.tracker .done:before{background:var(--green)}.tracker span{display:block;font-size:9px;margin-top:7px}.order-info{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;text-align:left}.order-info>div,.order-items{background:#fff;border:1px solid var(--line);border-radius:9px;padding:14px}.order-info small{font-size:8px;color:#777}.order-info p{font-size:10px;line-height:1.5}.order-items{margin-top:10px}.order-items>div{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:11px}.order-actions{display:flex;justify-content:center;gap:8px;margin-top:18px}.order-row{max-width:1180px;margin:0 auto 10px;background:#fff;border:1px solid var(--line);border-radius:9px;padding:16px;display:flex;justify-content:space-between}.order-row small{display:block;color:#777;font-size:9px;margin-top:4px}.order-row>div:last-child{display:flex;align-items:center;gap:14px}.pill{background:#edf7f0;color:var(--green);border-radius:20px;padding:5px 8px;font-size:9px}.profile-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}.profile-head{display:flex;align-items:center;gap:12px;margin-bottom:20px}.profile-head h2{margin:0!important}.profile-head small{color:#777}.saved-row{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:12px 0}.saved-row small{display:block;color:#777;font-size:9px;margin-top:4px}.auth{min-height:650px;display:grid;place-items:center}.auth>div{width:430px;background:#fff;border:1px solid var(--line);border-radius:13px;padding:34px}.auth h1{font:700 40px "Playfair Display",serif;margin:10px 0 20px}.auth form label{display:block;font-size:11px;font-weight:700;margin:12px 0}.auth input{width:100%;padding:11px;border:1px solid var(--line);border-radius:7px;margin-top:5px}.auth p{color:#777;font-size:11px;text-align:center}.auth a{color:var(--red);font-weight:700}.stats{max-width:1180px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.stats div{background:#fff;border:1px solid var(--line);border-radius:11px;padding:17px}.stats small{font-size:8px;color:#777}.stats b{display:block;font-size:25px;margin-top:7px}.admin-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:18px;padding:18px 0}.admin-row{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:1px solid var(--line);padding:12px 0}.admin-row small{display:block;color:#777;font-size:9px;margin-top:4px}.empty{max-width:1180px;margin:30px auto;background:#fff;border:1px dashed #ddd;border-radius:12px;text-align:center;padding:65px 20px}.review{border-top:1px solid var(--line);padding:13px 0}.review p{color:#777;font-size:11px}.review-form{display:flex;gap:8px;margin-top:15px}.review-form input,.review-form select{border:1px solid var(--line);border-radius:7px;padding:10px;flex:1}.toast{position:fixed;right:18px;top:90px;z-index:100;background:#202124;color:#fff;padding:12px 15px;border-radius:8px;font-size:11px;box-shadow:var(--shadow)}.toast.error{border-left:3px solid var(--red)}.toast.success{border-left:3px solid #4e9d6c}footer{margin-left:245px;background:#fff;border-top:1px solid var(--line);padding:25px;text-align:center;color:#777;font-size:10px}
 @media(max-width:950px){.sidebar{width:70px}.side-user>div:last-child,.sidebar nav span,.side-bottom a{display:none}.side-user{justify-content:center}.main{margin-left:70px}.food-grid{grid-template-columns:repeat(3,1fr)}.restaurants{grid-template-columns:repeat(2,1fr)}.profile-grid,.admin-grid{grid-template-columns:1fr}}@media(max-width:650px){header{height:auto}.top{height:auto;padding:10px;flex-wrap:wrap}.global-search{order:3;flex-basis:100%}.sidebar{display:none}.main{margin-left:0}.hero{margin:12px;height:540px;padding:35px 25px}.hero>img{width:100%;height:48%;top:auto;bottom:0;clip-path:none}.rating-badge{left:25px;bottom:44%}.hero h1{font-size:41px}.section,.page-head{padding-left:18px;padding-right:18px}.food-grid,.restaurants,.offers,.checkout,.cart-layout{grid-template-columns:1fr}.restaurant-meta{margin:0 18px 25px;flex-wrap:wrap}.order-info{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr;margin:0 18px}.admin-grid{padding:18px}.top-actions>a:first-child{display:none}.cart-row{grid-template-columns:55px 1fr 90px 20px}.cart-row>strong{grid-column:2}.qtybox{grid-column:3}.remove{grid-column:4;grid-row:1}.summary{position:static}footer{margin-left:0}}
 /* =========================================================
-   MOBILE SIDEBAR FIX — FOODIE
+   FOODIE — FINAL MOBILE SIDEBAR
+   Full navigation + profile + admin + login/logout
    ========================================================= */
 
 @media (max-width: 650px) {
 
-    /* Mobile bottom navigation */
+    /* ---------- MOBILE SIDEBAR ---------- */
+
     .sidebar {
-        display: flex !important;
         position: fixed !important;
+        top: 0 !important;
         left: 0 !important;
-        right: 0 !important;
         bottom: 0 !important;
-        top: auto !important;
 
-        width: 100% !important;
-        height: 68px !important;
-
-        padding: 5px 6px !important;
-        margin: 0 !important;
-
-        background: rgba(255,255,255,.97) !important;
-        border-top: 1px solid #e7e7e7 !important;
-        border-right: none !important;
-
-        box-shadow: 0 -5px 25px rgba(0,0,0,.08) !important;
-
-        z-index: 9999 !important;
-
-        display: block !important;
-    }
-
-    /* Hide profile block inside sidebar on mobile */
-    .sidebar .side-user {
-        display: none !important;
-    }
-
-    /* Navigation becomes horizontal */
-    .sidebar nav {
-        width: 100% !important;
-        height: 100% !important;
-
-        display: flex !important;
-        flex-direction: row !important;
-
-        align-items: stretch !important;
-        justify-content: space-around !important;
-
-        gap: 0 !important;
-        overflow: hidden !important;
-    }
-
-    /* Individual navigation items */
-    .sidebar nav a {
-        flex: 1 !important;
-
-        min-width: 0 !important;
-
-        padding: 5px 2px !important;
-        margin: 0 !important;
-
-        border-radius: 8px !important;
+        width: 285px !important;
+        max-width: 86vw !important;
+        height: 100vh !important;
 
         display: flex !important;
         flex-direction: column !important;
 
+        padding: 18px 14px !important;
+        margin: 0 !important;
+
+        background: #ffffff !important;
+
+        border: none !important;
+        border-right: 1px solid #eeeeee !important;
+
+        box-shadow: 10px 0 35px rgba(0,0,0,.14) !important;
+
+        z-index: 100001 !important;
+
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+
+        transform: translateX(-105%) !important;
+        transition: transform .28s ease !important;
+    }
+
+    /* Sidebar open */
+    body.mobile-menu-open .sidebar {
+        transform: translateX(0) !important;
+    }
+
+
+    /* ---------- PROFILE / USER ---------- */
+
+    .sidebar .side-user {
+        display: block !important;
+
+        width: 100% !important;
+
+        padding: 16px !important;
+        margin-bottom: 15px !important;
+
+        border-radius: 16px !important;
+
+        background: #fafafa !important;
+    }
+
+    .sidebar .side-user * {
+        max-width: 100% !important;
+    }
+
+
+    /* ---------- NAVIGATION ---------- */
+
+    .sidebar nav {
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        width: 100% !important;
+
+        gap: 5px !important;
+
+        flex: 1 !important;
+
+        overflow: visible !important;
+    }
+
+    .sidebar nav a {
+        display: flex !important;
+
+        flex-direction: row !important;
+
         align-items: center !important;
-        justify-content: center !important;
 
-        gap: 3px !important;
+        justify-content: flex-start !important;
 
-        color: #777 !important;
+        width: 100% !important;
+        min-height: 48px !important;
+
+        padding: 10px 13px !important;
+        margin: 0 !important;
+
+        gap: 12px !important;
+
+        border-radius: 12px !important;
 
         font-size: 18px !important;
-        line-height: 1 !important;
+
+        color: #555 !important;
+
+        text-decoration: none !important;
 
         position: relative !important;
     }
 
-    /* Text under icon */
-    .sidebar nav a span {
-        display: block !important;
+    .sidebar nav a:hover {
+        background: #fff5f5 !important;
+        color: #e23744 !important;
+    }
 
-        font-size: 8px !important;
+    .sidebar nav a.active {
+        background: #fff0f1 !important;
+        color: #e23744 !important;
         font-weight: 700 !important;
+    }
 
-        line-height: 1 !important;
+    .sidebar nav a span {
+        display: inline-block !important;
+
+        font-size: 14px !important;
+
+        font-weight: 600 !important;
 
         white-space: nowrap !important;
     }
 
-    /* Hover */
-    .sidebar nav a:hover {
-        background: #fff !important;
-        color: #e23744 !important;
-    }
 
-    /* Cart number */
+    /* ---------- CART BADGE ---------- */
+
     .sidebar nav a em {
         position: absolute !important;
 
-        top: 4px !important;
-        right: 19% !important;
+        left: 34px !important;
+        top: 5px !important;
 
-        margin: 0 !important;
-
-        min-width: 15px !important;
-        height: 15px !important;
-
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
+        min-width: 16px !important;
+        height: 16px !important;
 
         padding: 0 4px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
 
         border-radius: 20px !important;
 
         background: #e23744 !important;
-        color: white !important;
+        color: #ffffff !important;
 
         font-size: 8px !important;
         font-style: normal !important;
     }
 
-    /* Admin link shouldn't occupy mobile bottom nav */
+
+    /* ---------- ADMIN ---------- */
+
     .sidebar nav a[href*="/admin"] {
-        display: none !important;
+        display: flex !important;
     }
 
-    /* Logout hidden */
+
+    /* ---------- LOGIN / LOGOUT / BOTTOM ---------- */
+
     .sidebar .side-bottom {
-        display: none !important;
+        display: block !important;
+
+        width: 100% !important;
+
+        margin-top: auto !important;
+        padding-top: 12px !important;
+
+        border-top: 1px solid #eeeeee !important;
     }
 
-    /* Main content must have space for bottom nav */
+    .sidebar .side-bottom a,
+    .sidebar .side-bottom button {
+        width: 100% !important;
+
+        min-height: 46px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        padding: 10px 13px !important;
+
+        border-radius: 12px !important;
+
+        font-size: 14px !important;
+    }
+
+
+    /* ---------- DARK OVERLAY ---------- */
+
+    .mobile-sidebar-overlay {
+        position: fixed !important;
+
+        inset: 0 !important;
+
+        background: rgba(0,0,0,.48) !important;
+
+        z-index: 100000 !important;
+
+        opacity: 0 !important;
+
+        visibility: hidden !important;
+
+        transition: opacity .25s ease !important;
+    }
+
+    body.mobile-menu-open .mobile-sidebar-overlay {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+
+    /* ---------- HAMBURGER ---------- */
+
+    .mobile-menu-button {
+        position: fixed !important;
+
+        top: 14px !important;
+        left: 14px !important;
+
+        width: 44px !important;
+        height: 44px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        border: none !important;
+        border-radius: 12px !important;
+
+        background: #ffffff !important;
+
+        color: #222 !important;
+
+        font-size: 22px !important;
+
+        box-shadow: 0 4px 18px rgba(0,0,0,.12) !important;
+
+        z-index: 99999 !important;
+
+        cursor: pointer !important;
+    }
+
+    .mobile-menu-button:active {
+        transform: scale(.95) !important;
+    }
+
+
+    /* ---------- CLOSE BUTTON ---------- */
+
+    .mobile-sidebar-close {
+        position: absolute !important;
+
+        top: 14px !important;
+        right: 14px !important;
+
+        width: 36px !important;
+        height: 36px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        border: none !important;
+
+        border-radius: 10px !important;
+
+        background: #f5f5f5 !important;
+
+        font-size: 20px !important;
+
+        cursor: pointer !important;
+    }
+
+
+    /* ---------- MAIN CONTENT ---------- */
+
     .main {
         margin-left: 0 !important;
 
         width: 100% !important;
 
-        padding-bottom: 90px !important;
+        padding-bottom: 30px !important;
     }
 
-    /* Footer */
     footer {
         margin-left: 0 !important;
-        padding-bottom: 85px !important;
     }
 
-    /* Header */
-    header {
-        position: sticky !important;
-        top: 0 !important;
-        z-index: 9000 !important;
-    }
 
-    .top {
-        padding: 10px 14px !important;
-    }
+    /* ---------- RESPONSIVE CONTENT ---------- */
 
-    /* Hero */
-    .hero {
-        margin: 12px !important;
-        border-radius: 16px !important;
-    }
-
-    /* Restaurant cards */
     .restaurants {
         grid-template-columns: 1fr !important;
     }
 
-    /* Food cards */
     .food-grid {
         grid-template-columns: 1fr !important;
     }
 
-    /* Offers */
     .offers {
         grid-template-columns: 1fr !important;
     }
 
-    /* Checkout/cart */
     .checkout,
     .cart-layout {
         grid-template-columns: 1fr !important;
-        padding: 0 18px !important;
     }
 
-    /* Profile */
     .profile-grid {
         grid-template-columns: 1fr !important;
-        padding: 0 18px !important;
     }
 
-    /* Admin */
     .admin-grid {
         grid-template-columns: 1fr !important;
     }
 
-    /* Order tracker */
-    .tracker {
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-    }
-
-    /* Page heading */
     .page-head {
-        padding: 30px 18px 10px !important;
+        padding: 25px 16px 10px !important;
     }
 
     .page-head h1 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 }
 
 
-/* =========================================================
-   VERY SMALL PHONES
-   ========================================================= */
+/* ---------- SMALL PHONES ---------- */
 
 @media (max-width: 390px) {
 
     .sidebar {
-        height: 64px !important;
+        width: 275px !important;
     }
 
-    .sidebar nav a {
-        font-size: 16px !important;
+    .mobile-menu-button {
+        width: 42px !important;
+        height: 42px !important;
     }
 
-    .sidebar nav a span {
-        font-size: 7px !important;
-    }
-
-    .sidebar nav a em {
-        right: 14% !important;
-        top: 3px !important;
-    }
-
-    .main {
-        padding-bottom: 82px !important;
-    }
 }
