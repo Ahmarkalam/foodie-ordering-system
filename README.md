@@ -1,4 +1,4 @@
-# Foodie V4 — Zomato-inspired Food Ordering System
+# Foodie  —  Food Ordering System
 
 ## Local setup
 ```powershell
